@@ -32,7 +32,7 @@ h1 {
     /*background-color: #ebebeb !important;*/
     border-width: 0 10px 12px 0;
     border-style: solid;
-    border-color: var(--cor-laranja1);
+    border-color: #cccccc;
     box-shadow: 4px 5px 15px var(--cor-sombra);
 }
 
