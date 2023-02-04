@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #ebebeb;
+}
+
+.line-chart {
+    margin-top: 2rem !important;
+    background: #f7fdfd;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*canvas {*/
+/*    margin-top: 2rem !important;*/
+/*    border: 1pc solid gainsboro;*/
+/*    background: #f7fdfd;*/
+/*    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+h1 {
+    text-align:center;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    background-color: #ffffff;
+    /*background-color: #ebebeb !important;*/
+    border-width: 0 10px 12px 0;
+    border-style: solid;
+    border-color: var(--cor-laranja1);
+    box-shadow: 4px 5px 15px var(--cor-sombra);
+}
+
+/*.canvas-con-inner {*/
+/*    position: center;*/
+/*    margin: auto;*/
+/*    display: inline-block;*/
+/*}*/
+
+.container .box {
+    /*width:800px;*/
+    /*left: 200px;*/
+    /*margin:50px;*/
+    /*display:table;*/
+}
+
+.container .box .box-row {
+    display:table-row;
+}
+
+.container .box .box-cell {
+    display:table-cell;
+    width:800px !important;
+}
+
+.box .box-cell, .box1, .box2 {
+    background-color: #fdfdfd !important;
+}
+
+.box1 {
+    float:left;
+    /*width:800px;*/
+    /*height:280px;*/
+}
+.box2 {
+    display:table-cell;
+    /*float:left;*/
+    width:800px;
+    /*height:880px;*/
+}
+.box3 {
+    /*float:right;*/
+    /*width:400px;*/
+    /*height:280px;*/
+}
+
+.chartMenu {
+    width: 100vw;
+    height: 40px;
+    background: #1A1A1A;
+    color: rgba(54, 162, 235, 1);
+}
+.chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+}
+.chartCard {
+
+}
+.chartBox {
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgb(253, 138, 6);
+    background: white;
+    box-shadow: 4px 5px 15px var(--cor-sombra);
+}

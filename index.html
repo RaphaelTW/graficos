@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8" dir="ltr"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta name="description" content="Via Expressa"/>
+    <link rel="shortcut icon" href="./../img/icone.png">
+
+    <title>Inicial e Gráficos</title>
+
+    <link rel="stylesheet" href="css/adm.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/bootstrap.mim.css">
+
+    <!--[Icons]-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--[Bootstrap]-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--[Font Awesome]-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!--[Google Fonts]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!--[MDB]-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet"/>
+
+</head>
+
+<!-- [Navegação Principal]-->
+<header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <a class="navbar-brand mt-2 mt-lg-0" href="https://viaexpressa.com/">
+                    <form class="d-none d-md-flex input-group w-auto my-auto">
+                        <a class="navbar-brand" href="https://viaexpressa.com/">
+                            <img src="img/logo-via-cinzaElaranja2.png" width="50px" height="30px" alt="Logo-Via">
+                        </a>
+                    </form>
+                </a>
+
+                <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                       id="" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <i class="usuario">Painel dos Menus</i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                        <li>
+                            <a class="dropdown-item" href="">Menu 02</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="">Menu 02</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="usuario" style="margin: 1rem" href="">Opção 01</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="usuario" style="margin: 1rem" href="">Opção 02</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="usuario" style="margin: 1rem" href="">Opção 03</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="usuario" style="margin: 1rem" href="">Opção 04</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Avatar -->
+            <div class="dropdown">
+                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                   role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <img src="img/cropped-favicon-1-192x192-P03.png" class="rounded-circle" height="25"
+                         alt="Black and White Portrait of a Man" loading="lazy"/>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+
+                    <li>
+                        <a class="dropdown-item" href="">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+</header>
+<!--Main Navigation-->
+<body>
+
+<div class="container">
+
+    <canvas class="line-chart" id="p1"></canvas>
+    <!--    <button type="button" class="btn-primary" onclick="addData()">Add Mês</button>-->
+    <!--    <button type="button" class="btn-primary" onclick="removeData()">Remove Mês</button>-->
+    <hr>
+    <div class="box">
+        <div class="box-row">
+
+            <div class="box-cell box1">
+                <canvas class="" id="chart"></canvas>
+            </div>
+            <hr>
+            <div class="box-cell box2">
+                <canvas class="" id="myChart1"></canvas>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="chartCard">
+        <div class="chartBox">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<p class="error-validation template"></p>
+<!-- [Fim da Seção: Bloco de Design] -->
+</body>
+<!-- [Lista de Scripts] -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="./node_modules/chart.js/dist/chart.js"></script>
+
+<!--[Link ajax]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--[Popperjs]-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+<!--[Popperjs]-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+<!--[Bootstrap]-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+<!--[MDB]-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+<!--[Importação ajax para chartJS]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<!--[Importação plug chartJS]-->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<!--[Importação NPM chartJS]-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--[script do modulo do chartJS]-->
+<script src="./node_modules/chart.js/dist/chart.js"></script>
+<!--[script Datalabel para chartJS]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"
+        integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--[CDN do chartJS]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.min.js"
+        integrity="sha512-qKyIokLnyh6oSnWsc5h21uwMAQtljqMZZT17CIMXuCQNIfFSFF4tJdMOaJHL9fQdJUANid6OB6DRR0zdHrbWAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--[Link ajax]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="./js/index.js"></script>
+
+<script src="./js/graficoStatus.js"></script>
+
+<script src="./js/graficosExemplo.js"></script>
+
+<script src="./js/graficosExemplo2.js"></script>
+
+<script src="./js/exemploComRotulos.js"></script>
+
+</html>
