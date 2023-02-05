@@ -1,10 +1,10 @@
 // setup
 const data = {
-    labels: ["Todos os Agentes"],
+    labels: ["Tabela de Vendas"],
 
     datasets: [
         {
-            label: "POA - UPX",
+            label: "Op - 01",
             data: [20],
             borderWidth: 2,
             borderColor: 'rgba(4,93,154)',
@@ -17,7 +17,7 @@ const data = {
         },
 
         {
-            label: "VIX - TOP LINE",
+            label: "Op - 02",
             data: [8],
             borderWidth: 2,
             borderColor: 'rgba(180,1,1,0.85)',
@@ -30,7 +30,7 @@ const data = {
         },
 
         {
-            label: "BHZ - HABILLOG",
+            label: "Op - 03",
             data: [18],
             borderWidth: 2,
             borderColor: 'rgba(26,136,2,0.85)',
@@ -43,7 +43,7 @@ const data = {
         },
 
         {
-            label: "RIO - MONTEIRO",
+            label: "Op - 04",
             data: [7],
             borderWidth: 2,
             borderColor: 'rgba(162,149,2,0.85)',
@@ -56,7 +56,7 @@ const data = {
         },
 
         {
-            label: "CGR - AG EXPRESSO PETRALLAS",
+            label: "Op - 05",
             data: [11],
             borderWidth: 2,
             borderColor: 'rgba(5,164,122,0.85)',
@@ -69,7 +69,7 @@ const data = {
         },
 
         {
-            label: "CWB - RHR TRANSPORTES",
+            label: "Op - 06",
             data: [12],
             borderWidth: 2,
             borderColor: 'rgba(154,1,159,0.85)',
@@ -82,7 +82,7 @@ const data = {
         },
 
         {
-            label: "CGB - AGIL ENTREGAS RAPIDAS (THAMMY)",
+            label: "Op - 07",
             data: [9],
             borderWidth: 2,
             borderColor: 'rgb(128,0,0)',
@@ -95,7 +95,7 @@ const data = {
         },
 
         {
-            label: "PMW - ESTILO EXPRESS",
+            label: "Op - 08",
             data: [15],
             borderWidth: 2,
             borderColor: 'rgb(82,72,1)',
@@ -108,7 +108,7 @@ const data = {
         },
 
         {
-            label: "BSB - CIA DO TRANSPORTE",
+            label: "Op - 09",
             data: [18],
             borderWidth: 2,
             borderColor: 'rgba(14,61,1,0.85)',
@@ -121,7 +121,7 @@ const data = {
         },
 
         {
-            label: "VIA EXPRESSA RECIFE",
+            label: "Op - 10",
             data: [16],
             borderWidth: 2,
             borderColor: 'rgb(178,97,2)',
@@ -134,7 +134,7 @@ const data = {
         },
 
         {
-            label: "FOR - VELOMAX BRASIL",
+            label: "Op - 11",
             data: [14],
             borderWidth: 2,
             borderColor: 'rgba(56,56,56,0.85)',
@@ -147,7 +147,7 @@ const data = {
         },
 
         {
-            label: "GYN - ARN",
+            label: "Op - 12",
             data: [18],
             borderWidth: 2,
             borderColor: 'rgba(100,2,115,0.85)',
@@ -160,7 +160,7 @@ const data = {
         },
 
         {
-            label: "FLN - SS2 LOG",
+            label: "Op - 13",
             data: [19],
             borderWidth: 2,
             borderColor: 'rgb(0,0,0)',
@@ -173,7 +173,7 @@ const data = {
         },
 
         {
-            label: "RAO - GL LTDA",
+            label: "Op - 14",
             data: [12],
             borderWidth: 2,
             borderColor: 'rgba(56,56,56,0.85)',
@@ -186,7 +186,7 @@ const data = {
         },
 
         {
-            label: "RIO - ROGMAR EXPRESS",
+            label: "Op - 15",
             data: [18],
             borderWidth: 2,
             borderColor: 'rgba(76,107,1,0.85)',
@@ -199,7 +199,7 @@ const data = {
         },
 
         {
-            label: "SSA - LOGMEL EXPRESS",
+            label: "Op - 16",
             data: [15],
             borderWidth: 2,
             borderColor: 'rgb(0,24,124)',
@@ -226,11 +226,11 @@ const config = {
                 display: true,
                 fontSize: 80,
                 fontStyle: "bold",
-                text: "Gráfico das Coletas em Geral"
+                text: "Gráfico das Vendas em Geral"
             },
             subtitle: {
                 display: true,
-                text: 'Tabela de gerenciamento das coletas em gráfico'
+                text: 'Tabela de gerenciamento das vendas'
             },
             labels: {
                 fontStyle: "bold",
