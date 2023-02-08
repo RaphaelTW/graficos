@@ -6,7 +6,7 @@ const chartG = new Chart(ctx4, {
         labels: ["status 1", "status 2", "status 3", "status 4"],
         datasets: [
             {
-                label: "POA - UPX",
+                label: "Grafico ex",
                 data: [5, 8, 10, 14],
                 borderColor: [
                     'rgb(255, 99, 132)',
